@@ -204,6 +204,13 @@ void draw() {
     image(face5, faces[4].x*scale, faces[4].y*scale);
   }
   
+  // saves the frame if the space bar is pressed to to create videos if needed
+  if (keyPressed) {
+    if (key == ' '){
+      saveFrame("#####.jpg");
+    }
+  }
+  
 
 } // close draw
 
